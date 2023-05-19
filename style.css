@@ -120,24 +120,22 @@ main {
   border-inline: 1px solid whitesmoke;
   transform: scale(1, 0);
 }
+.img-container:hover img {
+  opacity: 0.4;
+  filter: blur(0);
+}
 .img-container:hover::before {
   transform: scale(1.05, 1);
 }
 .img-container:hover::after {
   transform: scale(1, 1.05);
 }
-
-img {
+.img-container img {
   min-width: 100%;
   display: block;
   transition: opacity ease-out 250ms;
   filter: blur(0.5rem);
   transition: filter ease 150ms;
-}
-
-.img-container:hover img {
-  opacity: 0.4;
-  filter: blur(0);
 }
 
 .text-container,

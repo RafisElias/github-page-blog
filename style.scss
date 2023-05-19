@@ -128,6 +128,11 @@ main {
   }
 
   &:hover {
+    img {
+      opacity: .4;
+      filter: blur(0);
+    }
+
     &::before {
       transform: scale(1.05, 1);
     }
@@ -136,19 +141,14 @@ main {
       transform: scale(1, 1.05);
     }
   }
-}
 
-img {
-  min-width: 100%;
-  display: block;
-  transition: opacity ease-out 250ms;
-  filter: blur(.5rem);
-  transition: filter ease 150ms;
-}
-
-.img-container:hover img {
-  opacity: .4;
-  filter: blur(0);
+  img {
+    min-width: 100%;
+    display: block;
+    transition: opacity ease-out 250ms;
+    filter: blur(.5rem);
+    transition: filter ease 150ms;
+  }
 }
 
 .text-container,
