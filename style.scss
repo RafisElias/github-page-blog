@@ -23,6 +23,10 @@ a:not([class]) {
 p {
   margin-top: 1.2rem;
   line-height: 1.5;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-align: justify;
 }
 
 header {
