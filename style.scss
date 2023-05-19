@@ -20,12 +20,6 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-img {
-  min-width: 100%;
-  display: block;
-  transition: opacity ease-out 250ms
-}
-
 p {
   margin-top: 1.2rem;
   line-height: 1.5;
@@ -140,8 +134,17 @@ main {
   }
 }
 
+img {
+  min-width: 100%;
+  display: block;
+  transition: opacity ease-out 250ms;
+  filter: blur(.5rem);
+  transition: filter ease 150ms;
+}
+
 .img-container:hover img {
   opacity: .4;
+  filter: blur(0);
 }
 
 .text-container,
